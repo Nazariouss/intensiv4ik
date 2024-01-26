@@ -1,31 +1,6 @@
-age = 19
-function canSmoke(age){
-    if (age >= 18) {
-        return "Покури братік"
-    } else {
-        return "Дядя витри молоко з губ"
-    }
+function sms(string) {
+    return Math.ceil(string.length / 60)
 }
 
-let can_smoke = function(age){
-    if (age >= 18) {
-        return "Покури братік"
-    } else {
-        return "Дядя витри молоко з губ"
-    }
-}
-
-let csmok = (age) => {
-    if (age >= 18) {
-        return "Покури братік"
-    } else {
-        return "Дядя витри молоко з губ"
-    }
-}
-
-function allowedTOIn(name, age, department) {
-    if (name == 'Толік' && age >= 18 && department == 'QA') {
-        return true
-    } 
-    return false
-}   
+count = sms("This package is native ESM and no longer provides a CommonJS export.")
+console.log(`You need ${count} sms to send text`)
