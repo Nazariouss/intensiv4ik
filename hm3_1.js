@@ -2,7 +2,7 @@
 
 var twoSum = function(nums, target) {
     n_len = nums.length
-    
+
     for (let i = 0; i < n_len; i += 1){
         for (let j = i + 1; j < n_len; j += 1 ){
             if (nums[i] + nums[j] === target){
