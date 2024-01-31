@@ -10,8 +10,14 @@ async function Posts(){
     return data
 }
 
-// let comments = Comments()
-// let posts = Posts()
+(async() => {
+    let comments =  Comments()
+    let posts = Posts()
 
-// console.log(comments)
-// console.log(posts)
+    let com = await comments
+    let pos = await posts
+
+    console.log(com)
+    console.log('---')
+    console.log(pos)
+})()
